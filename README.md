@@ -59,7 +59,7 @@ This cookbook supports the same platforms as the nginx and git cookbooks.  (Debi
 
 ## Usage
 
-### local workstation / development test
+### local workstation / development testing
 ```
 Git
  - install git and clone down this repository
@@ -78,9 +78,10 @@ PATH
  ensure that /opt/chefdk/bin is before any other Chef items in your PATH variable
 
 Get Rolling
-cd into company-webapp
+cd company-webapp
 kitchen converge # this will instantiate a new VM and converge it
 point your workstation browser to http://localhost:8000
+kitchen verify # this will run the serverspec tests
 kitchen login # this will allow you to log in to the VM
 
 ```
