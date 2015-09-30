@@ -60,6 +60,30 @@ This cookbook supports the same platforms as the nginx and git cookbooks.  (Debi
 ## Usage
 
 ### local workstation / development test
+```
+Git
+ - install git and clone down this repository
+
+VirtualBox
+ http://www.oracle.com/technetwork/server-storage/virtualbox/downloads/index.html
+
+Vagrant
+ http://www.vagrantup.com/downloads.html
+ vagrant plugin install vagrant-berkshelf
+
+Chef DK
+ https://downloads.chef.io/chef-dk/
+
+PATH
+ ensure that /opt/chefdk/bin is before any other Chef items in your PATH variable
+
+Get Rolling
+cd into company-webapp
+kitchen converge # this will instantiate a new VM and converge it
+point your workstation browser to http://localhost:8000
+kitchen login # this will allow you to log in to the VM
+
+```
 
 ### deploying this to your infrastructure
 
