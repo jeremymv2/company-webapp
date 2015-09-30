@@ -1,0 +1,10 @@
+name             'company-webapp'
+maintainer       'Jeremy J. Miller'
+maintainer_email 'jeremymv2@gmail.com'
+license          'All rights reserved'
+description      'Installs/Configures company-webapp'
+long_description 'Installs/Configures company-webapp'
+version          '0.1.0'
+
+depends          'nginx', '~> 2.7.6'
+depends          'git'

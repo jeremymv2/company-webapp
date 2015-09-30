@@ -1,0 +1,26 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_zero
+  client_rb:
+    ssl_verify_mode: :verify_none
+    log_level: :debug
+
+platforms:
+  - name: ubuntu-14.04
+    driver:
+      vm_hostname: company-webapp-chef
+      customize:
+        memory: 2048
+        natdnshostresolver1: "on"
+        natdnsproxy1: "on"
+      network:
+      - ["forwarded_port", {guest: 8000, host: 8000}]
+      - ["private_network", {type: "dhcp"}]
+suites:
+  - name: default
+    run_list:
+      - recipe[company-webapp::default]
+    attributes: {}

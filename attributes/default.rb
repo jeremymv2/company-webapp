@@ -1,0 +1,5 @@
+default['company-webapp']['port'] = '8000'
+default['company-webapp']['gitrepo'] = 'https://github.com/puppetlabs/exercise-webpage.git'
+default['company-webapp']['gitbranch'] = 'master'
+default['company-webapp']['docroot'] = '/var/www/nginx/default'
+default['company-webapp']['index'] = 'index.html index.htm'
