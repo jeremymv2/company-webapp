@@ -97,7 +97,6 @@ kitchen login # this will allow you to log in to the VM
   ]
 }
 ```
-
 ## License and Authors
 
 Author:: Jeremy J. Miller (<jeremymv2@gmail.com>)
